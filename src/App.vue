@@ -1,16 +1,26 @@
 <template>
   <div id="app">
-    <Pnl/>
+    <Pnl :strategies="strategies"/>
   </div>
 </template>
 
 <script>
 import Pnl from './components/Pnl.vue'
+import JQuery from 'jquery'
+let $ = JQuery
 
 export default {
   name: 'app',
   components: {
     Pnl
+  },
+  props: ['strategies'],
+  mounted() {
+    console.log("try")
+    $.getJSON('sample-data.json', json => {
+      console.log(json)
+      this.strategies = json
+    })
   }
 }
 </script>

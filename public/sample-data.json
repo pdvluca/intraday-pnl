@@ -1,0 +1,62 @@
+[
+  {
+    "strategy_name": "STRAT1",
+    "strategy_pnl": 0.15,
+    "pnl_group": {
+        "predictors": {
+          "pred1": 0.15,
+          "pred2": 0.05,
+          "pred3": -0.05,
+          "pred4": 0.45,
+          "pred5": -0.25,
+          "pred6": -0.05
+        }
+    },
+    "exposures_group": {
+        "countries": {
+          "UK": 0.10,
+          "DE": 0.05,
+          "FR": -0.05
+        },
+        "fx": {
+          "GBP": 0.10,
+          "EUR": 0.05,
+          "DKK": -0.05
+        },
+        "factors": {
+          "beta": 0.10,
+          "cash": 0.05
+        }
+    }
+  },
+  {
+    "strategy_name": "STRAT2",
+    "strategy_pnl": -0.12,
+    "pnl_group": {
+        "predictors": {
+          "pred1": 0.15,
+          "pred2": 0.15,
+          "pred3": 0.15,
+          "pred4": 0.15,
+          "pred5": 0.15,
+          "pred6": 0.15
+        }
+    },
+    "exposures_group": {
+        "countries": {
+          "UK": 0.10,
+          "DE": 0.05,
+          "FR": -0.05
+        },
+        "fx": {
+          "GBP": 0.10,
+          "EUR": 0.05,
+          "DKK": -0.05
+        },
+        "factors": {
+          "beta": 0.10,
+          "cash": 0.05
+        }
+    }
+  }
+]
